@@ -9,7 +9,9 @@
     "build": "netlify build",
     "serve": "netlify dev"
   },
-  "engines": { "node": "18.*.*.*" },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
