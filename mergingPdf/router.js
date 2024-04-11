@@ -8,6 +8,8 @@ const router = express.Router();
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
+console.log('-----------------Server started------------------------->');
+
 // Endpoint to handle PDF file uploads
 router.post("/pdf", upload.array("file", 2), finalPdf);
 router.get("/", (req, res) => {
