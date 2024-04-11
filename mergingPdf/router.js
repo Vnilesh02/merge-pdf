@@ -10,5 +10,8 @@ const upload = multer({ storage: storage });
 
 // Endpoint to handle PDF file uploads
 router.post("/pdf", upload.array("file", 2), finalPdf);
+router.get("/", (req, res) => {
+    res.send("App is running..");
+});
 
 module.exports = router;
